@@ -1,4 +1,5 @@
 import re
+import time
 import csv
 
 def start_with_a_end_with_b(words):
@@ -59,6 +60,14 @@ def create_csv(string):
         writer.writerow(["words having equal number of vowels and consonants", equal_vowel_and_consonant(string)])
         writer.writerow(["alphanumeric", alphanumeric(string)])
 
+
+def timed_call(function_name, arg1):
+    # Calculates the time taken by the code to be executed
+    t0 = time.time()
+    function_name(arg1)
+    t1 = time.time()
+    return t1-t0
+
 if __name__ == '__main__':
     string = '''the red brown fox went to the apple and saw a testament of space and point and plant and pterodactyles.
     we have been going to the ballroom in the wild. it is supposed to be the end of the world or the espionage, as they say,
@@ -66,4 +75,6 @@ if __name__ == '__main__':
     this was never supposed to happen in 2019, but it gave the impression that this will be it, for hereon until the final
     days. The sheep said aabbb and sat down.
     '''
-    create_csv(string.split())
+    # create_csv(string.split())
+    time_taken = timed_call(create_csv, string.split())
+    print("The time taken:", time_taken)
