@@ -4,10 +4,8 @@ This repo deals with the regular expressions. The regular expressions often call
 
 ## Modules
 
-import csv
-
-import re
-
+import csv (\n)
+import re (\n)
 import time
 
 ## Results
