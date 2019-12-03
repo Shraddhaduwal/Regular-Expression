@@ -4,9 +4,9 @@ This repo deals with the regular expressions. The regular expressions often call
 
 ## Modules
 
-import csv (\n)
-import re (\n)
-import time
+1. import csv
+2. import re
+3. import time
 
 ## Results
 
