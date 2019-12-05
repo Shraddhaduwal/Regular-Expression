@@ -26,3 +26,5 @@ Similarly, for the unit testing, the execution times of each methods are as foll
 - 'equal_vowel_and_consonant'  0.06 ms
 - 'alphanumeric'  0.29 ms
 
+The words with 3 'a' were not found in the corpus
+
